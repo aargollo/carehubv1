@@ -1,0 +1,15 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-carehubv1-dev-195203-authRole",
+      "UnauthRoleArn": "arn:aws:iam::216863624236:role/amplify-carehubv1-dev-195203-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::216863624236:role/amplify-carehubv1-dev-195203-authRole",
+      "Region": "sa-east-1",
+      "DeploymentBucketName": "amplify-carehubv1-dev-195203-deployment",
+      "UnauthRoleName": "amplify-carehubv1-dev-195203-unauthRole",
+      "StackName": "amplify-carehubv1-dev-195203",
+      "StackId": "arn:aws:cloudformation:sa-east-1:216863624236:stack/amplify-carehubv1-dev-195203/4d38c6f0-e160-11ed-a5d1-06899c0e53b0",
+      "AmplifyAppId": "d1m3o4b6o5vry5"
+    }
+  }
+}
