@@ -33,8 +33,8 @@ const App = () => {
 
   async function addCareThings() {
     try {
-      if (!formState.id || !formState.timeStamp || !formState.alarmeO2 ) return
-      //|| !formState.alarmeCACO2 || !formState.temperatura || !formState.umidade || !formState.particulados1um || !formState.particulados25um || !formState.particulados10um || !formState.cargaO2
+      if (!formState.id || !formState.timeStamp || !formState.alarmeO2 || !formState.alarmeCACO2 || !formState.temperatura || !formState.umidade || !formState.particulados1um || !formState.particulados25um || !formState.particulados10um || !formState.cargaO2) return
+      //
       const device = { ...formState }
       setCareData([...devices, device])
       setFormState(initialState)
