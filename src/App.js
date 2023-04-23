@@ -99,7 +99,7 @@ const App = () => {
         onChange={event => setInput('particulados25um', event.target.value)}
         style={styles.input}
         value={formState.particulados25um}
-        placeholder="particulados25um"
+        placeholder="particulados2,5um"
       />
       <input
         onChange={event => setInput('particulados10um', event.target.value)}
