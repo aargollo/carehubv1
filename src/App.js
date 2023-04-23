@@ -33,7 +33,7 @@ const App = () => {
 
   async function addCareThings() {
     try {
-      if (!formState.id || !formState.timeStamp || !formState.alarmeO2 || !formState.alarmeCACO2 || !formState.temperatura || !formState.umidade || !formState.particulados1um || !formState.particulados25um || !formState.particulados10um || !formState.cargaO2) return
+      if (!formState.deviceId || !formState.timeStamp || !formState.alarmeO2 || !formState.alarmeCACO2 || !formState.temperatura || !formState.umidade || !formState.particulados1um || !formState.particulados25um || !formState.particulados10um || !formState.cargaO2) return
       //
       const device = { ...formState }
       setCareData([...devices, device])
@@ -48,10 +48,10 @@ const App = () => {
     <div style={styles.container}>
       <h2>Amplify CareBox</h2>
       <input
-        onChange={event => setInput('id', event.target.value)}
+        onChange={event => setInput('deviceId', event.target.value)}
         style={styles.input}
         value={formState.id}
-        placeholder="id"
+        placeholder="deviceId"
       />
       <input
         onChange={event => setInput('timeStamp', event.target.value)}
@@ -116,7 +116,7 @@ const App = () => {
       <button style={styles.button} onClick={addCareThings}>Create Measurement</button>
       {
         devices.map((device, index) => (
-          <div key={device.id ? device.id : index} style={styles.device}>
+          <div key={device.deviceId ? device.deviceId : index} style={styles.device}>
             <p style={styles.deviceName}>{device.deviceId}</p>
             <p style={styles.deviceTimeStamp}>{device.timeStamp}</p>
             <p style={styles.devicealarmeO2}>{device.alarmeO2}</p>
